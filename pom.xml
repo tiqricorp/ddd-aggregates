@@ -12,29 +12,16 @@
   <properties>
     <major-version>1</major-version>
     <revision>${major-version}.local-SNAPSHOT</revision>
-
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-    <!--
-      Make IntelliJ use preferred Code Style.
-      See https://kotlinlang.org/docs/reference/code-style-migration-guide.html
-    -->
     <kotlin.code.style>official</kotlin.code.style>
-
     <kotlin.version>1.5.31</kotlin.version>
   </properties>
 
-  <scm>
-    <developerConnection>scm:git:https://github.com/capralifecycle/ddd-aggregates.git</developerConnection>
-    <connection>scm:git:https://github.com/capralifecycle/ddd-aggregates.git</connection>
-    <url>https://github.com/capralifecycle/ddd-aggregates</url>
-    <tag>HEAD</tag>
-  </scm>
-
   <distributionManagement>
     <repository>
-      <id>capra-releases</id>
-      <url>https://mvnrepo.capraconsulting.no/content/repositories/capra-releases</url>
+      <id>github</id>
+      <name>GitHub tiqricorp Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/tiqricorp/ddd-aggregates</url>
     </repository>
   </distributionManagement>
 
@@ -57,10 +44,9 @@
       <url>https://jcenter.bintray.com</url>
     </repository>
 
-    <!-- Internal Liflig -->
     <repository>
       <id>github</id>
-      <url>https://maven.pkg.github.com/capralifecycle/*</url>
+      <url>https://maven.pkg.github.com/tiqricorp/*</url>
     </repository>
   </repositories>
 
@@ -142,7 +128,7 @@
     <dependency>
       <groupId>no.liflig</groupId>
       <artifactId>snapshot-test</artifactId>
-      <version>1.20220623.105505</version>
+      <version>1.20220913.064437</version>
       <scope>test</scope>
     </dependency>
 
